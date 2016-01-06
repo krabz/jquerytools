@@ -49,7 +49,7 @@
 
 		/* The Error Messages */
 		messages: {
-			"*": { en: "Please correct this value" }		
+			"*": { en: "Please correct this value." }
 		},
 		
 		localize: function(lang, messages) { 
@@ -219,11 +219,11 @@
 	
 	/******* built-in HTML5 standard validators *********/
 	
-	v.fn(":email", "Please enter a valid email address", function(el, v) {
+	v.fn(":email", "Please enter a valid email address.", function(el, v) {
 		return !v || emailRe.test(v);
 	});
 	
-	v.fn(":url", "Please enter a valid URL", function(el, v) {
+	v.fn(":url", "Please enter a valid URL.", function(el, v) {
 		return !v || urlRe.test(v);
 	});
 	
@@ -231,7 +231,7 @@
 		return numRe.test(v);			
 	});
 	
-	v.fn("[max]", "Please enter a value no larger than $1", function(el, v) {
+	v.fn("[max]", "Please enter a value no larger than $1.", function(el, v) {
 			
 		// skip empty values and dateinputs
 		if (v === '' || dateInput && el.is(":date")) { return true; }	
@@ -240,7 +240,7 @@
 		return parseFloat(v) <= parseFloat(max) ? true : [max];
 	});
 	
-	v.fn("[min]", "Please enter a value of at least $1", function(el, v) {
+	v.fn("[min]", "Please enter a value of at least $1.", function(el, v) {
 
 		// skip empty values and dateinputs
 		if (v === '' || dateInput && el.is(":date")) { return true; }

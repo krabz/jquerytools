@@ -1,0 +1,20 @@
+{
+  "name": "jquerytools",
+  "version": "1.2.9",
+  "homepage": "https://github.com/AOEpeople/jquerytools",
+  "authors": [
+    "Mathias Schopmans <mathias.schopmans@aoe.com>",
+    "Roman Langolf <roman.langolf@aoe.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
