@@ -234,7 +234,7 @@
 	v.fn("[max]", "Please enter a value no larger than $1.", function(el, v) {
 			
 		// skip empty values and dateinputs
-		if (v === '' || dateInput && el.is(":date")) { return true; }	
+		if (v === '' || el.is('[type="date"]')) { return true; }
 		
 		var max = el.attr("max");
 		return parseFloat(v) <= parseFloat(max) ? true : [max];
@@ -243,7 +243,7 @@
 	v.fn("[min]", "Please enter a value of at least $1.", function(el, v) {
 
 		// skip empty values and dateinputs
-		if (v === '' || dateInput && el.is(":date")) { return true; }
+		if (v === '' || el.is('[type="date"]')) { return true; }
 
 		var min = el.attr("min");
 		return parseFloat(v) >= parseFloat(min) ? true : [min];
@@ -429,7 +429,7 @@
 					// field and it's error message container						
 					var msgs = [], 
 						 el = $(this).data("messages", msgs),
-						 event = dateInput && el.is(":date") ? "onHide.v" : conf.errorInputEvent + ".v";					
+						 event = dateInput && el.is('[type="date"]') ? "onHide.v" : conf.errorInputEvent + ".v";
 					
 					// cleanup previous validation event
 					el.off(event);
