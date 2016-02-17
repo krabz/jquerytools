@@ -400,16 +400,6 @@
 				els = els || inputs;    
 				els = els.not(":disabled");
 
-				// filter duplicate elements by name
-				var names = {};
-				els = els.filter(function(){
-					var name = $(this).attr("name");					
-					if (!names[name]) {
-						names[name] = true;
-						return $(this);
-					}
-				});
-
 				if (!els.length) { return true; }
 
 				e = e || $.Event();
