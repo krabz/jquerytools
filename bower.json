@@ -1,7 +1,7 @@
 {
-  "name": "jquerytools",
+  "name": "jquerytools-ng",
   "version": "1.2.11",
-  "homepage": "https://github.com/AOEpeople/jquerytools",
+  "homepage": "https://github.com/krabz/jquerytools-ng",
   "authors": [
     "Mathias Schopmans <mathias.schopmans@aoe.com>",
     "Roman Langolf <roman.langolf@aoe.com>"
