@@ -4,7 +4,8 @@
   "homepage": "https://github.com/krabz/jquerytools-ng",
   "authors": [
     "Mathias Schopmans <mathias.schopmans@aoe.com>",
-    "Roman Langolf <roman.langolf@aoe.com>"
+    "Roman Langolf <roman.langolf@aoe.com>",
+    "Sergio Kurilla <krabz@openmailbox.org>"
   ],
   "moduleType": [
     "globals"
